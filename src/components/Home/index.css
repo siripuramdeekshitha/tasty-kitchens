@@ -1,0 +1,568 @@
+* {
+  box-sizing: border-box;
+}
+
+.tk-home-page {
+  min-height: 100vh;
+  background: #ffffff;
+  overflow-x: hidden;
+}
+
+.tk-home-main {
+  width: 100%;
+}
+
+/* =========================
+   HERO
+========================= */
+
+.tk-hero-section {
+  background:
+    linear-gradient(
+      135deg,
+      #fff7ed 0%,
+      #ffffff 55%,
+      #fffaf5 100%
+    );
+
+  padding: 65px 7% 70px;
+}
+
+.tk-hero-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.tk-hero-small-text {
+  margin: 0 0 12px;
+
+  font-size: 13px;
+  font-weight: 700;
+
+  letter-spacing: 2px;
+
+  color: #f97316;
+}
+
+.tk-hero-content h1 {
+  margin: 0;
+
+  font-size: 48px;
+  line-height: 1.1;
+
+  color: #111827;
+}
+
+.tk-hero-description {
+  margin: 18px 0 28px;
+
+  font-size: 17px;
+
+  color: #64748b;
+}
+
+.tk-search-box {
+  width: 100%;
+  max-width: 560px;
+
+  height: 58px;
+
+  display: flex;
+  align-items: center;
+
+  background: #ffffff;
+
+  border: 1px solid #e5e7eb;
+
+  border-radius: 10px;
+
+  padding: 0 18px;
+
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.tk-search-icon {
+  font-size: 28px;
+
+  color: #64748b;
+
+  margin-right: 10px;
+}
+
+.tk-search-box input {
+  flex: 1;
+
+  border: none;
+
+  outline: none;
+
+  font-size: 15px;
+
+  color: #1f2937;
+
+  background: transparent;
+}
+
+.tk-search-box input::placeholder {
+  color: #94a3b8;
+}
+
+/* =========================
+   COMMON SECTION
+========================= */
+
+.tk-offers-section,
+.tk-restaurants-section {
+  width: 86%;
+  max-width: 1200px;
+
+  margin: 0 auto;
+}
+
+/* =========================
+   OFFERS
+========================= */
+
+.tk-offers-section {
+  padding: 45px 0 20px;
+}
+
+.tk-section-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 22px;
+}
+
+.tk-section-label {
+  margin: 0 0 6px;
+
+  font-size: 12px;
+
+  font-weight: 700;
+
+  letter-spacing: 1.5px;
+
+  color: #f97316;
+}
+
+.tk-section-heading h2,
+.tk-restaurants-heading h2 {
+  margin: 0;
+
+  font-size: 30px;
+
+  color: #111827;
+}
+
+.tk-offer-slider {
+  width: 100%;
+
+  overflow: hidden;
+
+  border-radius: 14px;
+}
+
+.tk-offer-slide {
+  padding: 0 8px;
+}
+
+.tk-offer-image {
+  width: 100%;
+
+  height: 260px;
+
+  object-fit: cover;
+
+  border-radius: 14px;
+
+  display: block;
+}
+
+/* Slick spacing */
+
+.tk-offer-slider .slick-list {
+  margin: 0 -8px;
+}
+
+.tk-offer-slider .slick-dots {
+  bottom: 10px;
+}
+
+.tk-offer-slider .slick-dots li button:before {
+  color: #f97316;
+}
+
+.tk-offer-slider .slick-prev,
+.tk-offer-slider .slick-next {
+  z-index: 5;
+}
+
+.tk-offer-slider .slick-prev {
+  left: 18px;
+}
+
+.tk-offer-slider .slick-next {
+  right: 18px;
+}
+
+/* =========================
+   RESTAURANTS
+========================= */
+
+.tk-restaurants-section {
+  padding: 50px 0 70px;
+}
+
+.tk-restaurants-heading {
+  margin-bottom: 20px;
+}
+
+.tk-subtitle {
+  margin: 8px 0 0;
+
+  color: #64748b;
+
+  font-size: 15px;
+}
+
+/* =========================
+   RESTAURANT GRID
+========================= */
+
+.tk-restaurant-grid {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 28px;
+
+  margin-top: 28px;
+}
+
+.tk-restaurant-link {
+  text-decoration: none;
+
+  color: inherit;
+
+  display: block;
+}
+
+.tk-restaurant-card {
+  background: #ffffff;
+
+  border-radius: 12px;
+
+  overflow: hidden;
+
+  border: 1px solid #eeeeee;
+
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.07);
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.tk-restaurant-card:hover {
+  transform: translateY(-5px);
+
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+/* Restaurant image */
+
+.tk-restaurant-image-container {
+  width: 100%;
+
+  height: 190px;
+
+  position: relative;
+
+  overflow: hidden;
+}
+
+.tk-restaurant-image {
+  width: 100%;
+
+  height: 100%;
+
+  object-fit: cover;
+
+  display: block;
+
+  transition: transform 0.3s ease;
+}
+
+.tk-restaurant-card:hover
+.tk-restaurant-image {
+  transform: scale(1.04);
+}
+
+/* Rating badge */
+
+.tk-rating-badge {
+  position: absolute;
+
+  bottom: 10px;
+  left: 10px;
+
+  background: #ffffff;
+
+  padding: 5px 8px;
+
+  border-radius: 5px;
+
+  font-size: 12px;
+
+  font-weight: 700;
+
+  color: #111827;
+
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+/* Restaurant text */
+
+.tk-restaurant-content {
+  padding: 15px 16px 17px;
+}
+
+.tk-restaurant-name {
+  margin: 0 0 7px;
+
+  font-size: 19px;
+
+  font-weight: 700;
+
+  color: #111827;
+
+  white-space: nowrap;
+
+  overflow: hidden;
+
+  text-overflow: ellipsis;
+}
+
+.tk-restaurant-cuisine {
+  margin: 0 0 12px;
+
+  font-size: 14px;
+
+  color: #64748b;
+
+  white-space: nowrap;
+
+  overflow: hidden;
+
+  text-overflow: ellipsis;
+}
+
+.tk-restaurant-meta {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  font-size: 13px;
+
+  color: #64748b;
+}
+
+.tk-restaurant-meta span:first-child {
+  color: #f59e0b;
+
+  font-weight: 600;
+}
+
+/* =========================
+   NO RESULTS
+========================= */
+
+.tk-no-results {
+  text-align: center;
+
+  padding: 70px 20px;
+}
+
+.tk-no-results-icon {
+  font-size: 50px;
+
+  margin-bottom: 10px;
+}
+
+.tk-no-results h3 {
+  margin: 0 0 8px;
+
+  font-size: 22px;
+
+  color: #111827;
+}
+
+.tk-no-results p {
+  margin: 0;
+
+  color: #64748b;
+}
+
+/* =========================
+   LOADING
+========================= */
+
+.tk-loader {
+  min-height: 180px;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  color: #64748b;
+
+  font-size: 16px;
+}
+
+.tk-offers-error {
+  padding: 50px;
+
+  text-align: center;
+
+  color: #64748b;
+}
+
+/* =========================
+   PAGINATION
+========================= */
+
+.tk-pagination {
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  gap: 18px;
+
+  margin-top: 45px;
+}
+
+.tk-pagination p {
+  margin: 0;
+
+  color: #475569;
+
+  font-size: 15px;
+}
+
+.tk-pagination-button {
+  width: 40px;
+  height: 40px;
+
+  border: 1px solid #d1d5db;
+
+  background: #ffffff;
+
+  border-radius: 6px;
+
+  font-size: 18px;
+
+  color: #334155;
+}
+
+.tk-pagination-button:hover:not(:disabled) {
+  border-color: #f97316;
+
+  color: #f97316;
+}
+
+.tk-pagination-button:disabled {
+  opacity: 0.4;
+
+  cursor: not-allowed;
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media screen and (max-width: 992px) {
+  .tk-hero-section {
+    padding: 50px 6%;
+  }
+
+  .tk-hero-content h1 {
+    font-size: 40px;
+  }
+
+  .tk-offers-section,
+  .tk-restaurants-section {
+    width: 90%;
+  }
+
+  .tk-restaurant-grid {
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 22px;
+  }
+
+  .tk-offer-image {
+    height: 220px;
+  }
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media screen and (max-width: 576px) {
+  .tk-hero-section {
+    padding: 40px 6% 45px;
+  }
+
+  .tk-hero-content h1 {
+    font-size: 32px;
+  }
+
+  .tk-hero-description {
+    font-size: 14px;
+  }
+
+  .tk-search-box {
+    height: 52px;
+  }
+
+  .tk-offers-section,
+  .tk-restaurants-section {
+    width: 92%;
+  }
+
+  .tk-offers-section {
+    padding-top: 30px;
+  }
+
+  .tk-section-heading h2,
+  .tk-restaurants-heading h2 {
+    font-size: 24px;
+  }
+
+  .tk-offer-image {
+    height: 170px;
+  }
+
+  .tk-restaurant-grid {
+    grid-template-columns: 1fr;
+
+    gap: 20px;
+  }
+
+  .tk-restaurant-image-container {
+    height: 190px;
+  }
+
+  .tk-restaurant-name {
+    font-size: 18px;
+  }
+}

@@ -1,0 +1,51 @@
+.restaurants-header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  margin-top: 10px;
+}
+
+.sort-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.filter-icon {
+  font-size: 24px;
+  color: #475569;
+}
+
+.sort-container label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #334155;
+}
+
+.sort-container select {
+  height: 36px;
+
+  padding: 0 10px;
+
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+
+  background: #ffffff;
+
+  color: #334155;
+
+  cursor: pointer;
+
+  outline: none;
+}
+
+.sort-container select:focus {
+  border-color: #f97316;
+}
+
+@media screen and (max-width: 576px) {
+  .restaurants-header {
+    justify-content: flex-start;
+  }
+}

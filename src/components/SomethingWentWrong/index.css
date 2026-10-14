@@ -1,0 +1,30 @@
+.something-wrong-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+.something-wrong-container h1 {
+  margin-bottom: 10px;
+  color: #1e293b;
+  font-size: 30px;
+}
+
+.something-wrong-container p {
+  margin-bottom: 20px;
+  color: #64748b;
+}
+
+.try-again-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #f7931e;
+  color: #ffffff;
+  font-weight: 600;
+  cursor: pointer;
+}

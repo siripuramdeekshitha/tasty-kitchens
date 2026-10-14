@@ -1,0 +1,22 @@
+.all-restaurants-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px 0;
+}
+
+.all-restaurants-container h1 {
+  margin: 0;
+  font-size: 28px;
+  color: #1f2937;
+}
+
+@media screen and (max-width: 576px) {
+  .all-restaurants-container {
+    width: 92%;
+  }
+
+  .all-restaurants-container h1 {
+    font-size: 24px;
+  }
+}
